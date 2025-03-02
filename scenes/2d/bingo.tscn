@@ -7,3 +7,6 @@
 script = ExtResource("1_4q06y")
 
 [node name="BingoCell" parent="." instance=ExtResource("2_k83nv")]
+visible = false
+
+[node name="Board" type="Node2D" parent="."]

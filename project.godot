@@ -14,3 +14,9 @@ config/name="Shadow of the Colossus Bingo"
 run/main_scene="res://scenes/2d/bingo.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1300
+window/size/viewport_height=1300
+window/stretch/aspect="expand"

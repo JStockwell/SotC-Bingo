@@ -1,12 +1,13 @@
 extends Node
+class_name BingoCell
 
 @onready
 var cellText = $Cell/CellText
 
 var text: String = "[p align=center][font_size=20]%s %s\n%s\n%s"
 
-var difficulty: String = "UTA"
 var colossus: String = "UNDEFINED"
+var difficulty: String = "UTA"
 var time: float = 0.0
 var offset: int = 0
 
@@ -33,6 +34,12 @@ func convert_time(pTime: float) -> String:
 		
 	else:
 		minutes = "%s:" % minutes
+		
+	if seconds < 10:
+		seconds = "0%s." % seconds
+		
+	else:
+		seconds = "%s." % seconds
 	
-	var finalTime = "%s:%s.%s" % [minutes, seconds, str(miliseconds).replace("0.", "")]
+	var finalTime = minutes + seconds + str(miliseconds).replace("0.", "")
 	return finalTime
