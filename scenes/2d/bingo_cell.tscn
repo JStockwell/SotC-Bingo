@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://drbd4esx6ppql"]
+
+[ext_resource type="Script" path="res://scripts/2d/bingo_cell.gd" id="1_1dy0x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_juaee"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_y6flp"]
+size = Vector2(250, 250)
+
+[node name="BingoCell" type="Node2D"]
+script = ExtResource("1_1dy0x")
+
+[node name="Cell" type="StaticBody2D" parent="."]
+position = Vector2(125, 125)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cell"]
+scale = Vector2(12.6, 12.6)
+shape = SubResource("RectangleShape2D_juaee")
+one_way_collision_margin = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Cell"]
+texture = SubResource("PlaceholderTexture2D_y6flp")
+
+[node name="CellText" type="RichTextLabel" parent="Cell"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -43.0
+offset_right = 100.0
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[p align=center][font_size=20]NTA VALUS
+X:XX.XX
+33%"
+scroll_active = false
+autowrap_mode = 0
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
