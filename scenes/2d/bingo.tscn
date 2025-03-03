@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dscq30ax601iq"]
 
 [ext_resource type="Script" path="res://scripts/2d/bingo.gd" id="1_4q06y"]
-[ext_resource type="PackedScene" uid="uid://drbd4esx6ppql" path="res://scenes/2d/bingo_cell.tscn" id="2_k83nv"]
+[ext_resource type="PackedScene" uid="uid://drbd4esx6ppql" path="res://scenes/entities/bingo_cell.tscn" id="2_k83nv"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_4q06y")

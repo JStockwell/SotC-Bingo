@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://drbd4esx6ppql"]
+
+[ext_resource type="Script" path="res://scripts/entities/bingo_cell.gd" id="1_bduxe"]
+[ext_resource type="Texture2D" uid="uid://cbowxjfc3qe5p" path="res://assets/buttons/bingo_cell_normal.jpg" id="2_21di7"]
+[ext_resource type="Texture2D" uid="uid://fugxgo1hym3s" path="res://assets/buttons/bingo_cell_selected.jpg" id="3_tui0q"]
+
+[node name="BingoCell" type="Node2D"]
+script = ExtResource("1_bduxe")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_right = 250.0
+offset_bottom = 250.0
+toggle_mode = true
+texture_normal = ExtResource("2_21di7")
+texture_pressed = ExtResource("3_tui0q")
+
+[node name="CellText" type="RichTextLabel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 82.0
+offset_right = 225.0
+offset_bottom = 168.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+bbcode_enabled = true
+text = "[p align=center][font_size=20]NTA VALUS
+X:XX.XX
+33%"
+scroll_active = false
+autowrap_mode = 0
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false

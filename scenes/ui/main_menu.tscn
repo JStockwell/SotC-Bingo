@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://clp6e2mtuo2qe"]
+
+[ext_resource type="Script" path="res://scripts/2d/main_menu.gd" id="1_b6ltp"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_b6ltp")
+
+[node name="Buttons" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GenerateBoard" type="Button" parent="Buttons"]
+offset_left = 24.0
+offset_top = 155.0
+offset_right = 155.0
+offset_bottom = 186.0
+text = "Generate Board"
+
+[node name="SetTimes" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 195.0
+offset_right = 107.0
+offset_bottom = 226.0
+text = "Set Times
+"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_right = 1299.0
+offset_bottom = 88.0
+bbcode_enabled = true
+text = "[font_size=64]Shadow of the Colossus BINGO"
+
+[connection signal="pressed" from="Buttons/GenerateBoard" to="." method="_on_generate_board_pressed"]
+[connection signal="pressed" from="Buttons/SetTimes" to="." method="_on_set_times_pressed"]

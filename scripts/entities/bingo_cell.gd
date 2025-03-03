@@ -2,7 +2,7 @@ extends Node
 class_name BingoCell
 
 @onready
-var cellText = $Cell/CellText
+var cellText = $CellText
 
 var text: String = "[p align=center][font_size=20]%s %s\n%s\n%s"
 

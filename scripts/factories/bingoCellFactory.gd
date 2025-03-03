@@ -1,6 +1,6 @@
 extends Node
 
-const BingoCellScene = preload("res://scenes/2d/bingo_cell.tscn")
+const BingoCellScene = preload("res://scenes/entities/bingo_cell.tscn")
 
 static func create(args: Dictionary) -> BingoCell:
 	var cell = BingoCellScene.instantiate()

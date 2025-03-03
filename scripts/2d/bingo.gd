@@ -61,7 +61,7 @@ func generate_board() -> void:
 			var tempCell = Factory.BingoCell.create(args)
 			board.add_child(tempCell)
 			tempCell.change_text()
-			tempCell.position = Vector2(256 * j, 256 * i)
+			tempCell.position = Vector2(10 + 256 * j, 10 + 256 * i)
 
 func generate_cells() -> Dictionary:
 	var cellCol = []
