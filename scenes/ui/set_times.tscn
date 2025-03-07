@@ -8,8 +8,1628 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="NTA" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="RichTextLabel" parent="NTA"]
 layout_mode = 0
-offset_right = 215.0
-offset_bottom = 113.0
-text = "TODO SET TIMES"
+offset_left = 30.0
+offset_top = 55.0
+offset_right = 310.0
+offset_bottom = 103.0
+bbcode_enabled = true
+text = "[font_size=32][p align=center]NTA"
+
+[node name="Colossus1" type="Control" parent="NTA"]
+anchors_preset = 0
+offset_top = 128.0
+offset_right = 40.0
+offset_bottom = 168.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus1"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]1. Valus:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus1"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus1"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus1/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus1/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus1/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus2" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 192.0
+offset_right = 40.0
+offset_bottom = 232.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus2"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]2. Quadratus:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus2"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus2"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus2/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus2/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus2/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus3" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 256.0
+offset_right = 40.0
+offset_bottom = 296.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus3"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]3. Gaius:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus3"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus3"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus3/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus3/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus3/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus4" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 320.0
+offset_right = 40.0
+offset_bottom = 360.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus4"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]4. Phaedra:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus4"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus4"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus4/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus4/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus4/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus5" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 384.0
+offset_right = 40.0
+offset_bottom = 424.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus5"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]5. Avion:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus5"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus5"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus5/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus5/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus5/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus6" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 448.0
+offset_right = 40.0
+offset_bottom = 488.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus6"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]6. Barba:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus6"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus6"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus6/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus6/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus6/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus7" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 512.0
+offset_right = 40.0
+offset_bottom = 552.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus7"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]7. Hydrus:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus7"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus7"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus7/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus7/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus7/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus8" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 576.0
+offset_right = 40.0
+offset_bottom = 616.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus8"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]8. Kuromori:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus8"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus8"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus8/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus8/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus8/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus9" type="Control" parent="NTA"]
+anchors_preset = 0
+offset_top = 640.0
+offset_right = 40.0
+offset_bottom = 680.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus9"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]9. Basaran:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus9"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus9"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus9/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus9/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus9/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus10" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 704.0
+offset_right = 40.0
+offset_bottom = 744.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus10"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]10. Dirge:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus10"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus10"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus10/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus10/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus10/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus11" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 768.0
+offset_right = 40.0
+offset_bottom = 808.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus11"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]11. Celosia:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus11"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus11"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus11/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus11/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus11/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus12" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 832.0
+offset_right = 40.0
+offset_bottom = 872.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus12"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]12. Pelagia:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus12"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus12"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus12/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus12/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus12/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus13" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 896.0
+offset_right = 40.0
+offset_bottom = 936.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus13"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]13. Phalanx:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus13"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus13"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus13/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus13/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus13/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus14" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 960.0
+offset_right = 40.0
+offset_bottom = 1000.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus14"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]14. Cenobia:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus14"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus14"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus14/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus14/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus14/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus15" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 1024.0
+offset_right = 40.0
+offset_bottom = 1064.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus15"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]15. Argus:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus15"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus15"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus15/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus15/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus15/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus16" type="Control" parent="NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 1088.0
+offset_right = 40.0
+offset_bottom = 1128.0
+
+[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus16"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]16. Malus:"
+
+[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus16"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="NTA/Colossus16"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="NTA/Colossus16/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="NTA/Colossus16/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus16/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="HTA" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 386.0
+offset_right = 426.0
+offset_bottom = 40.0
+
+[node name="Title" type="RichTextLabel" parent="HTA"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 55.0
+offset_right = 313.0
+offset_bottom = 103.0
+bbcode_enabled = true
+text = "[font_size=32][p align=center]HTA"
+
+[node name="Colossus1" type="Control" parent="HTA"]
+anchors_preset = 0
+offset_top = 128.0
+offset_right = 40.0
+offset_bottom = 168.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus1"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]1. Valus:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus1"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus1"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus1/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus1/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus1/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus2" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 192.0
+offset_right = 40.0
+offset_bottom = 232.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus2"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]2. Quadratus:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus2"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus2"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus2/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus2/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus2/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus3" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 256.0
+offset_right = 40.0
+offset_bottom = 296.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus3"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]3. Gaius:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus3"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus3"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus3/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus3/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus3/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus4" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 320.0
+offset_right = 40.0
+offset_bottom = 360.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus4"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]4. Phaedra:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus4"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus4"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus4/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus4/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus4/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus5" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 384.0
+offset_right = 40.0
+offset_bottom = 424.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus5"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]5. Avion:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus5"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus5"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus5/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus5/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus5/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus6" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 448.0
+offset_right = 40.0
+offset_bottom = 488.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus6"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]6. Barba:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus6"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus6"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus6/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus6/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus6/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus7" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 512.0
+offset_right = 40.0
+offset_bottom = 552.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus7"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]7. Hydrus:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus7"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus7"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus7/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus7/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus7/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus8" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 576.0
+offset_right = 40.0
+offset_bottom = 616.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus8"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]8. Kuromori:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus8"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus8"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus8/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus8/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus8/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus9" type="Control" parent="HTA"]
+anchors_preset = 0
+offset_top = 640.0
+offset_right = 40.0
+offset_bottom = 680.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus9"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]9. Basaran:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus9"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus9"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus9/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus9/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus9/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus10" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 704.0
+offset_right = 40.0
+offset_bottom = 744.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus10"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]10. Dirge:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus10"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus10"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus10/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus10/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus10/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus11" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 768.0
+offset_right = 40.0
+offset_bottom = 808.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus11"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]11. Celosia:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus11"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus11"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus11/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus11/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus11/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus12" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 832.0
+offset_right = 40.0
+offset_bottom = 872.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus12"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]12. Pelagia:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus12"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus12"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus12/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus12/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus12/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus13" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 896.0
+offset_right = 40.0
+offset_bottom = 936.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus13"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]13. Phalanx:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus13"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus13"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus13/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus13/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus13/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus14" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 960.0
+offset_right = 40.0
+offset_bottom = 1000.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus14"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]14. Cenobia:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus14"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus14"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus14/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus14/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus14/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus15" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 1024.0
+offset_right = 40.0
+offset_bottom = 1064.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus15"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]15. Argus:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus15"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus15"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus15/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus15/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus15/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Colossus16" type="Control" parent="HTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 1088.0
+offset_right = 40.0
+offset_bottom = 1128.0
+
+[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus16"]
+layout_mode = 0
+offset_right = 137.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "[p align=right]16. Malus:"
+
+[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus16"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 317.0
+offset_bottom = 69.0
+bbcode_enabled = true
+text = "m         s           ms"
+
+[node name="Inputs" type="Control" parent="HTA/Colossus16"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 37.0
+offset_bottom = 35.0
+
+[node name="Minutes" type="TextEdit" parent="HTA/Colossus16/Inputs"]
+layout_mode = 0
+offset_left = 146.0
+offset_right = 178.0
+offset_bottom = 37.0
+placeholder_text = "X"
+
+[node name="Seconds" type="TextEdit" parent="HTA/Colossus16/Inputs"]
+layout_mode = 0
+offset_left = 197.0
+offset_right = 229.0
+offset_bottom = 37.0
+placeholder_text = "XX"
+
+[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus16/Inputs"]
+layout_mode = 0
+offset_left = 248.0
+offset_right = 280.0
+offset_bottom = 37.0
+placeholder_text = "XX"

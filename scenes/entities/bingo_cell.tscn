@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://drbd4esx6ppql"]
 
-[ext_resource type="Script" path="res://scripts/entities/bingo_cell.gd" id="1_bduxe"]
+[ext_resource type="Script" uid="uid://dy6xcqeafojhy" path="res://scripts/entities/bingo_cell.gd" id="1_bduxe"]
 [ext_resource type="Texture2D" uid="uid://cbowxjfc3qe5p" path="res://assets/buttons/bingo_cell_normal.jpg" id="2_21di7"]
 [ext_resource type="Texture2D" uid="uid://fugxgo1hym3s" path="res://assets/buttons/bingo_cell_selected.jpg" id="3_tui0q"]
 
