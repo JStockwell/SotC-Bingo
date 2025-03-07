@@ -11,13 +11,20 @@ config_version=5
 [application]
 
 config/name="Shadow of the Colossus Bingo"
+config/description="Small Bingo game for Shadow of the Colossus speedrunning.
+
+Made by Stockie, repo https://github.com/JStockwell/SotC-Bingo"
+config/version="0.1a"
 run/main_scene="res://scenes/ui/main_menu.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://6c8cyx75fop4"
+
+[autoload]
+
+Variables="*res://scripts/global/variables.gd"
 
 [display]
 
-window/size/viewport_width=1300
-window/size/viewport_height=1300
-window/stretch/mode="viewport"
-window/stretch/aspect="expand"
+window/size/viewport_width=940
+window/size/viewport_height=940
+window/size/resizable=false

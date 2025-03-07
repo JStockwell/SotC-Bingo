@@ -1,8 +1,5 @@
 extends Node
 
-const TIMES_PATH = "user://times.json"
-const RESET_PATH = "user://reference_times.json"
-
 #region NTA LineEdits
 var NTA_LE = []
 @onready var ntaCol1LE = $Col/NTA/Col1/LineEdit
@@ -23,50 +20,27 @@ var NTA_LE = []
 @onready var ntaCol16LE = $Col/NTA/Col16/LineEdit
 #endregion
 
-# TODO make external
-var colTimes: Dictionary = {
-	"nta": {
-		"col1": 0.0,
-		"col2": 0.0,
-		"col3": 0.0,
-		"col4": 0.0,
-		"col5": 0.0,
-		"col6": 0.0,
-		"col7": 0.0,
-		"col8": 0.0,
-		"col9": 0.0,
-		"col10": 0.0,
-		"col11": 0.0,
-		"col12": 0.0,
-		"col13": 0.0,
-		"col14": 0.0,
-		"col15": 0.0,
-		"col16": 0.0
-	},
-	"hta": {
-		"col1": 0.0,
-		"col2": 0.0,
-		"col3": 0.0,
-		"col4": 0.0,
-		"col5": 0.0,
-		"col6": 0.0,
-		"col7": 0.0,
-		"col8": 0.0,
-		"col9": 0.0,
-		"col10": 0.0,
-		"col11": 0.0,
-		"col12": 0.0,
-		"col13": 0.0,
-		"col14": 0.0,
-		"col15": 0.0,
-		"col16": 0.0
-	}
-}
+#region HTA LineEdits
+var HTA_LE = []
+@onready var htaCol1LE = $Col/HTA/Col1/LineEdit
+@onready var htaCol2LE = $Col/HTA/Col2/LineEdit
+@onready var htaCol3LE = $Col/HTA/Col3/LineEdit
+@onready var htaCol4LE = $Col/HTA/Col4/LineEdit
+@onready var htaCol5LE = $Col/HTA/Col5/LineEdit
+@onready var htaCol6LE = $Col/HTA/Col6/LineEdit
+@onready var htaCol7LE = $Col/HTA/Col7/LineEdit
+@onready var htaCol8LE = $Col/HTA/Col8/LineEdit
+@onready var htaCol9LE = $Col/HTA/Col9/LineEdit
+@onready var htaCol10LE = $Col/HTA/Col10/LineEdit
+@onready var htaCol11LE = $Col/HTA/Col11/LineEdit
+@onready var htaCol12LE = $Col/HTA/Col12/LineEdit
+@onready var htaCol13LE = $Col/HTA/Col13/LineEdit
+@onready var htaCol14LE = $Col/HTA/Col14/LineEdit
+@onready var htaCol15LE = $Col/HTA/Col15/LineEdit
+@onready var htaCol16LE = $Col/HTA/Col16/LineEdit
+#endregion
 
-enum COLOSSUS_ENUM {
-	col1, col2, col3, col4, col5, col6, col7, col8,
-	col9, col10, col11, col12, col13, col14, col15, col16
-}
+var tempColTimes: Dictionary
 
 func _ready() -> void:
 	setup_le()
@@ -89,36 +63,53 @@ func setup_le() -> void:
 	NTA_LE.append(ntaCol14LE)
 	NTA_LE.append(ntaCol15LE)
 	NTA_LE.append(ntaCol16LE)
+	
+	HTA_LE.append(htaCol1LE)
+	HTA_LE.append(htaCol2LE)
+	HTA_LE.append(htaCol3LE)
+	HTA_LE.append(htaCol4LE)
+	HTA_LE.append(htaCol5LE)
+	HTA_LE.append(htaCol6LE)
+	HTA_LE.append(htaCol7LE)
+	HTA_LE.append(htaCol8LE)
+	HTA_LE.append(htaCol9LE)
+	HTA_LE.append(htaCol10LE)
+	HTA_LE.append(htaCol11LE)
+	HTA_LE.append(htaCol12LE)
+	HTA_LE.append(htaCol13LE)
+	HTA_LE.append(htaCol14LE)
+	HTA_LE.append(htaCol15LE)
+	HTA_LE.append(htaCol16LE)
 
 func update_labels() -> void:
 	load_times()
 	for i in range(2):
 		for j in range(NTA_LE.size()):
 			if i == 0:
-				NTA_LE[j].text = "" if colTimes["nta"][COLOSSUS_ENUM.find_key(j)] == 0 else Utils.convert_time(colTimes["nta"][COLOSSUS_ENUM.find_key(j)], 0)
-			#else:
-				#HTA_LE[j].text = "" if colTimes["hta"][COLOSSUS_ENUM.find_key(j)] == 0 else Utils.convert_time(colTimes["hta"][COLOSSUS_ENUM.find_key(j)], 0)
+				NTA_LE[j].text = "" if tempColTimes["nta"][Variables.COLOSSUS_ENUM.find_key(j)] == 0 else Utils.convert_time(tempColTimes["nta"][Variables.COLOSSUS_ENUM.find_key(j)], 0)
+			else:
+				HTA_LE[j].text = "" if tempColTimes["hta"][Variables.COLOSSUS_ENUM.find_key(j)] == 0 else Utils.convert_time(tempColTimes["hta"][Variables.COLOSSUS_ENUM.find_key(j)], 0)
 	pass
 
 func _on_set_times_pressed() -> void:
 	print_debug("Saving times...")
-	print_verbose(colTimes)
-	Utils.save_file(TIMES_PATH, colTimes)
+	print_verbose(tempColTimes)
+	Utils.save_file(Variables.TIMES_PATH, tempColTimes)
 	update_labels()
 
 func _on_return_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/ui/main_menu.tscn")
 
 func _on_time_text_changed(new_text: String, isHTA: bool, colNum: int) -> void:
-	var colId = COLOSSUS_ENUM.find_key(colNum - 1)
+	var colId = Variables.COLOSSUS_ENUM.find_key(colNum - 1)
 	
 	if validate_time(new_text):
 		var tempTime = convert_time(new_text)
 		
 		if not isHTA:
-			colTimes["nta"][colId] = tempTime
+			tempColTimes["nta"][colId] = tempTime
 		else:
-			colTimes["hta"][colId] = tempTime
+			tempColTimes["hta"][colId] = tempTime
 
 func convert_time(text: String) -> float:
 	var result = 0.0
@@ -150,19 +141,21 @@ func validate_time(textToValidate: String) -> bool:
 	return result
 
 func load_times() -> void:
-	var loadedTimes = Utils.load_file(TIMES_PATH)
+	var loadedTimes = Utils.load_file(Variables.TIMES_PATH)
 	
-	if loadedTimes:
-		colTimes = loadedTimes
+	if loadedTimes.keys().size() > 0:
+		tempColTimes = loadedTimes
 		
-	print(colTimes)
+	else:
+		printerr("Invalid ColTimes")
+
 
 func _on_reset_times_pressed() -> void:
-	Utils.load_file(TIMES_PATH)
+	Utils.load_file(Variables.TIMES_PATH)
 	update_labels()
 
 
 func _on_delete_times_pressed() -> void:
-	var reference = Utils.load_file(RESET_PATH)
-	Utils.save_file(TIMES_PATH, reference)
+	var reference = Utils.load_file(Variables.RESET_PATH)
+	Utils.save_file(Variables.TIMES_PATH, reference)
 	update_labels()

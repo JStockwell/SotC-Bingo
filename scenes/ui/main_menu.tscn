@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://clp6e2mtuo2qe"]
+[gd_scene load_steps=3 format=3 uid="uid://clp6e2mtuo2qe"]
 
 [ext_resource type="Script" uid="uid://csp1ejborwhu" path="res://scripts/ui/main_menu.gd" id="1_b6ltp"]
+[ext_resource type="Texture2D" uid="uid://6c8cyx75fop4" path="res://assets/Logo512.png" id="2_fe2o3"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -15,27 +16,41 @@ offset_bottom = 40.0
 
 [node name="GenerateBoard" type="Button" parent="Buttons"]
 layout_mode = 0
-offset_left = 24.0
-offset_top = 155.0
-offset_right = 155.0
-offset_bottom = 186.0
+offset_left = 405.0
+offset_top = 551.0
+offset_right = 536.0
+offset_bottom = 582.0
 text = "Generate Board"
 
 [node name="SetTimes" type="Button" parent="Buttons"]
 layout_mode = 0
-offset_left = 24.0
-offset_top = 195.0
-offset_right = 107.0
-offset_bottom = 226.0
+offset_left = 429.0
+offset_top = 593.0
+offset_right = 512.0
+offset_bottom = 624.0
 text = "Set Times
 "
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="BGColor" type="LineEdit" parent="."]
 layout_mode = 0
-offset_right = 1299.0
-offset_bottom = 88.0
-bbcode_enabled = true
-text = "[font_size=64]Shadow of the Colossus BINGO"
+offset_left = 478.0
+offset_top = 635.0
+offset_right = 546.563
+offset_bottom = 666.0
+text = "454545"
+placeholder_text = "FFFFFF"
+
+[node name="BGColorLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 313.0
+offset_top = 639.0
+offset_right = 478.0
+offset_bottom = 662.0
+text = "Background colour: #"
+
+[node name="Logo512" type="Sprite2D" parent="."]
+position = Vector2(470, 272)
+texture = ExtResource("2_fe2o3")
 
 [connection signal="pressed" from="Buttons/GenerateBoard" to="." method="_on_generate_board_pressed"]
 [connection signal="pressed" from="Buttons/SetTimes" to="." method="_on_set_times_pressed"]
