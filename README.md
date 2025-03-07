@@ -1,4 +1,4 @@
-# SotC-Bingo
+# Shadow of the Colossus BINGO!
 
 A small Bingo program for Shadow of the Colossus!
 
