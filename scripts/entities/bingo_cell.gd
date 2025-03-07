@@ -20,26 +20,4 @@ func setup(t_difficulty: String, t_colossus: String, t_time: float, t_offset: in
 	change_text()
 
 func change_text() -> void:
-	cellText.text = text % [difficulty, colossus, convert_time(time), str(offset) + "%"]
-
-func convert_time(pTime: float) -> String:
-	var adjustedTime = pTime * (1 + (float(offset) / 100))
-	
-	var minutes = snapped(adjustedTime / 60, 0)
-	var seconds = snapped(adjustedTime - minutes * 60, 0)
-	var miliseconds = snapped(adjustedTime - snapped(adjustedTime, 0), 0.01)
-	
-	if minutes == 0:
-		minutes = ""
-		
-	else:
-		minutes = "%s:" % minutes
-		
-	if seconds < 10:
-		seconds = "0%s." % seconds
-		
-	else:
-		seconds = "%s." % seconds
-	
-	var finalTime = minutes + seconds + str(miliseconds).replace("0.", "")
-	return finalTime
+	cellText.text = text % [difficulty, colossus, Utils.convert_time(time, offset), str(offset) + "%"]

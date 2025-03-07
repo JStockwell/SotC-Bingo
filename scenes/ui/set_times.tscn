@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://dqoelm37fick7"]
+[gd_scene load_steps=2 format=3 uid="uid://dqoelm37fick7"]
+
+[ext_resource type="Script" uid="uid://crjt7mq7di2wg" path="res://scripts/ui/set_times.gd" id="1_dggvy"]
 
 [node name="SetTimes" type="Control"]
 layout_mode = 3
@@ -7,1629 +9,463 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_dggvy")
 
-[node name="NTA" type="Control" parent="."]
+[node name="Buttons" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 171.0
+offset_top = -57.0
+offset_right = 211.0
+offset_bottom = -17.0
+
+[node name="Return" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 806.0
+offset_top = 66.0
+offset_right = 903.0
+offset_bottom = 120.0
+text = "Return to
+main menu"
+
+[node name="SetTimes" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 812.0
+offset_top = 137.0
+offset_right = 895.0
+offset_bottom = 168.0
+text = "Set Times"
+
+[node name="ResetTimes" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 804.0
+offset_top = 185.0
+offset_right = 905.0
+offset_bottom = 216.0
+text = "Reset Times"
+
+[node name="DeleteTimes" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 235.0
+offset_right = 909.0
+offset_bottom = 266.0
+text = "Delete Times"
+
+[node name="Col" type="Control" parent="."]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Title" type="RichTextLabel" parent="NTA"]
-layout_mode = 0
-offset_left = 30.0
-offset_top = 55.0
-offset_right = 310.0
-offset_bottom = 103.0
-bbcode_enabled = true
-text = "[font_size=32][p align=center]NTA"
-
-[node name="Colossus1" type="Control" parent="NTA"]
+[node name="NTA" type="Control" parent="Col"]
 anchors_preset = 0
-offset_top = 128.0
+offset_left = 16.0
+offset_right = 56.0
+offset_bottom = 40.0
+
+[node name="Col1" type="Control" parent="Col/NTA"]
+anchors_preset = 0
 offset_right = 40.0
-offset_bottom = 168.0
+offset_bottom = 40.0
 
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus1"]
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col1"]
 layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]1. Valus:"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus1"]
+[node name="Label" type="Label" parent="Col/NTA/Col1"]
 layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
 
-[node name="Inputs" type="Control" parent="NTA/Colossus1"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus1/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus1/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus1/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus2" type="Control" parent="NTA"]
+[node name="Col2" type="Control" parent="Col/NTA"]
 layout_mode = 3
 anchors_preset = 0
-offset_top = 192.0
+offset_top = 40.0
 offset_right = 40.0
-offset_bottom = 232.0
+offset_bottom = 80.0
 
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus2"]
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col2"]
 layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]2. Quadratus:"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus2"]
+[node name="Label" type="Label" parent="Col/NTA/Col2"]
 layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "2. Quadratus"
+horizontal_alignment = 2
 
-[node name="Inputs" type="Control" parent="NTA/Colossus2"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus2/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus2/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus2/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus3" type="Control" parent="NTA"]
+[node name="Col3" type="Control" parent="Col/NTA"]
 layout_mode = 3
 anchors_preset = 0
-offset_top = 256.0
+offset_top = 80.0
 offset_right = 40.0
-offset_bottom = 296.0
+offset_bottom = 120.0
 
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus3"]
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col3"]
 layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]3. Gaius:"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus3"]
+[node name="Label" type="Label" parent="Col/NTA/Col3"]
 layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "3. Gaius"
+horizontal_alignment = 2
 
-[node name="Inputs" type="Control" parent="NTA/Colossus3"]
+[node name="Col4" type="Control" parent="Col/NTA"]
+layout_mode = 3
 anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
+offset_top = 120.0
+offset_right = 40.0
+offset_bottom = 160.0
 
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus3/Inputs"]
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col4"]
 layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus3/Inputs"]
+[node name="Label" type="Label" parent="Col/NTA/Col4"]
 layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "4. Phaedra"
+horizontal_alignment = 2
 
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus3/Inputs"]
+[node name="Col5" type="Control" parent="Col/NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 160.0
+offset_right = 40.0
+offset_bottom = 200.0
+
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col5"]
 layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Colossus4" type="Control" parent="NTA"]
+[node name="Label" type="Label" parent="Col/NTA/Col5"]
+layout_mode = 0
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
+
+[node name="Col6" type="Control" parent="Col/NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 200.0
+offset_right = 40.0
+offset_bottom = 240.0
+
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col6"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
+
+[node name="Label" type="Label" parent="Col/NTA/Col6"]
+layout_mode = 0
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
+
+[node name="Col7" type="Control" parent="Col/NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 240.0
+offset_right = 40.0
+offset_bottom = 280.0
+
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col7"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
+
+[node name="Label" type="Label" parent="Col/NTA/Col7"]
+layout_mode = 0
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
+
+[node name="Col8" type="Control" parent="Col/NTA"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 280.0
+offset_right = 40.0
+offset_bottom = 320.0
+
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col8"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
+
+[node name="Label" type="Label" parent="Col/NTA/Col8"]
+layout_mode = 0
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
+
+[node name="Col9" type="Control" parent="Col/NTA"]
 layout_mode = 3
 anchors_preset = 0
 offset_top = 320.0
 offset_right = 40.0
 offset_bottom = 360.0
 
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus4"]
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col9"]
 layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]4. Phaedra:"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus4"]
+[node name="Label" type="Label" parent="Col/NTA/Col9"]
 layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
 
-[node name="Inputs" type="Control" parent="NTA/Colossus4"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus4/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus4/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus4/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus5" type="Control" parent="NTA"]
+[node name="Col10" type="Control" parent="Col/NTA"]
 layout_mode = 3
 anchors_preset = 0
-offset_top = 384.0
+offset_top = 360.0
 offset_right = 40.0
-offset_bottom = 424.0
+offset_bottom = 400.0
 
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus5"]
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col10"]
 layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]5. Avion:"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus5"]
+[node name="Label" type="Label" parent="Col/NTA/Col10"]
 layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
 
-[node name="Inputs" type="Control" parent="NTA/Colossus5"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus5/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus5/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus5/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus6" type="Control" parent="NTA"]
+[node name="Col11" type="Control" parent="Col/NTA"]
 layout_mode = 3
 anchors_preset = 0
-offset_top = 448.0
+offset_top = 400.0
 offset_right = 40.0
-offset_bottom = 488.0
+offset_bottom = 440.0
 
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus6"]
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col11"]
 layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]6. Barba:"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus6"]
+[node name="Label" type="Label" parent="Col/NTA/Col11"]
 layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
 
-[node name="Inputs" type="Control" parent="NTA/Colossus6"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus6/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus6/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus6/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus7" type="Control" parent="NTA"]
+[node name="Col12" type="Control" parent="Col/NTA"]
 layout_mode = 3
 anchors_preset = 0
-offset_top = 512.0
+offset_top = 440.0
 offset_right = 40.0
-offset_bottom = 552.0
+offset_bottom = 480.0
 
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus7"]
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col12"]
 layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]7. Hydrus:"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus7"]
+[node name="Label" type="Label" parent="Col/NTA/Col12"]
 layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
 
-[node name="Inputs" type="Control" parent="NTA/Colossus7"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus7/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus7/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus7/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus8" type="Control" parent="NTA"]
+[node name="Col13" type="Control" parent="Col/NTA"]
 layout_mode = 3
 anchors_preset = 0
-offset_top = 576.0
+offset_top = 480.0
 offset_right = 40.0
-offset_bottom = 616.0
+offset_bottom = 520.0
 
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus8"]
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col13"]
 layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]8. Kuromori:"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus8"]
+[node name="Label" type="Label" parent="Col/NTA/Col13"]
 layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
 
-[node name="Inputs" type="Control" parent="NTA/Colossus8"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus8/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus8/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus8/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus9" type="Control" parent="NTA"]
-anchors_preset = 0
-offset_top = 640.0
-offset_right = 40.0
-offset_bottom = 680.0
-
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus9"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]9. Basaran:"
-
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus9"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="NTA/Colossus9"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus9/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus9/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus9/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus10" type="Control" parent="NTA"]
+[node name="Col14" type="Control" parent="Col/NTA"]
 layout_mode = 3
 anchors_preset = 0
-offset_top = 704.0
+offset_top = 520.0
 offset_right = 40.0
-offset_bottom = 744.0
+offset_bottom = 560.0
 
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus10"]
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col14"]
 layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]10. Dirge:"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus10"]
+[node name="Label" type="Label" parent="Col/NTA/Col14"]
 layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
 
-[node name="Inputs" type="Control" parent="NTA/Colossus10"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus10/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus10/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus10/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus11" type="Control" parent="NTA"]
+[node name="Col15" type="Control" parent="Col/NTA"]
 layout_mode = 3
 anchors_preset = 0
-offset_top = 768.0
+offset_top = 560.0
 offset_right = 40.0
-offset_bottom = 808.0
+offset_bottom = 600.0
 
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus11"]
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col15"]
 layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]11. Celosia:"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus11"]
+[node name="Label" type="Label" parent="Col/NTA/Col15"]
 layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
 
-[node name="Inputs" type="Control" parent="NTA/Colossus11"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus11/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus11/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus11/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus12" type="Control" parent="NTA"]
+[node name="Col16" type="Control" parent="Col/NTA"]
 layout_mode = 3
 anchors_preset = 0
-offset_top = 832.0
+offset_top = 600.0
 offset_right = 40.0
-offset_bottom = 872.0
+offset_bottom = 640.0
 
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus12"]
+[node name="LineEdit" type="LineEdit" parent="Col/NTA/Col16"]
 layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]12. Pelagia:"
+offset_left = 108.0
+offset_top = 111.0
+offset_right = 177.0
+offset_bottom = 142.0
+placeholder_text = "X:XX.xx"
+emoji_menu_enabled = false
 
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus12"]
+[node name="Label" type="Label" parent="Col/NTA/Col16"]
 layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
+offset_top = 114.0
+offset_right = 100.0
+offset_bottom = 137.0
+text = "1. Valus"
+horizontal_alignment = 2
 
-[node name="Inputs" type="Control" parent="NTA/Colossus12"]
+[node name="Debug" type="Control" parent="."]
 anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus12/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus12/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus12/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus13" type="Control" parent="NTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 896.0
 offset_right = 40.0
-offset_bottom = 936.0
-
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus13"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]13. Phalanx:"
-
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus13"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="NTA/Colossus13"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus13/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus13/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus13/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus14" type="Control" parent="NTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 960.0
-offset_right = 40.0
-offset_bottom = 1000.0
-
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus14"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]14. Cenobia:"
-
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus14"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="NTA/Colossus14"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus14/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus14/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus14/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus15" type="Control" parent="NTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 1024.0
-offset_right = 40.0
-offset_bottom = 1064.0
-
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus15"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]15. Argus:"
-
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus15"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="NTA/Colossus15"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus15/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus15/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus15/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus16" type="Control" parent="NTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 1088.0
-offset_right = 40.0
-offset_bottom = 1128.0
-
-[node name="Colossus" type="RichTextLabel" parent="NTA/Colossus16"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]16. Malus:"
-
-[node name="Indicators" type="RichTextLabel" parent="NTA/Colossus16"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="NTA/Colossus16"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="NTA/Colossus16/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="NTA/Colossus16/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="NTA/Colossus16/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="HTA" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 386.0
-offset_right = 426.0
 offset_bottom = 40.0
 
-[node name="Title" type="RichTextLabel" parent="HTA"]
-layout_mode = 0
-offset_left = 28.0
-offset_top = 55.0
-offset_right = 313.0
-offset_bottom = 103.0
-bbcode_enabled = true
-text = "[font_size=32][p align=center]HTA"
-
-[node name="Colossus1" type="Control" parent="HTA"]
-anchors_preset = 0
-offset_top = 128.0
-offset_right = 40.0
-offset_bottom = 168.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus1"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]1. Valus:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus1"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus1"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus1/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus1/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus1/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus2" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 192.0
-offset_right = 40.0
-offset_bottom = 232.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus2"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]2. Quadratus:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus2"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus2"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus2/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus2/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus2/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus3" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 256.0
-offset_right = 40.0
-offset_bottom = 296.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus3"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]3. Gaius:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus3"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus3"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus3/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus3/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus3/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus4" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 320.0
-offset_right = 40.0
-offset_bottom = 360.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus4"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]4. Phaedra:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus4"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus4"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus4/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus4/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus4/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus5" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 384.0
-offset_right = 40.0
-offset_bottom = 424.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus5"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]5. Avion:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus5"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus5"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus5/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus5/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus5/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus6" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 448.0
-offset_right = 40.0
-offset_bottom = 488.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus6"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]6. Barba:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus6"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus6"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus6/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus6/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus6/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus7" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 512.0
-offset_right = 40.0
-offset_bottom = 552.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus7"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]7. Hydrus:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus7"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus7"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus7/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus7/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus7/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus8" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 576.0
-offset_right = 40.0
-offset_bottom = 616.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus8"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]8. Kuromori:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus8"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus8"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus8/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus8/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus8/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus9" type="Control" parent="HTA"]
-anchors_preset = 0
-offset_top = 640.0
-offset_right = 40.0
-offset_bottom = 680.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus9"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]9. Basaran:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus9"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus9"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus9/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus9/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus9/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus10" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 704.0
-offset_right = 40.0
-offset_bottom = 744.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus10"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]10. Dirge:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus10"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus10"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus10/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus10/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus10/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus11" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 768.0
-offset_right = 40.0
-offset_bottom = 808.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus11"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]11. Celosia:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus11"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus11"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus11/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus11/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus11/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus12" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 832.0
-offset_right = 40.0
-offset_bottom = 872.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus12"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]12. Pelagia:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus12"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus12"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus12/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus12/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus12/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus13" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 896.0
-offset_right = 40.0
-offset_bottom = 936.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus13"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]13. Phalanx:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus13"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus13"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus13/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus13/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus13/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus14" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 960.0
-offset_right = 40.0
-offset_bottom = 1000.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus14"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]14. Cenobia:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus14"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus14"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus14/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus14/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus14/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus15" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 1024.0
-offset_right = 40.0
-offset_bottom = 1064.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus15"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]15. Argus:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus15"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus15"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus15/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus15/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus15/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Colossus16" type="Control" parent="HTA"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 1088.0
-offset_right = 40.0
-offset_bottom = 1128.0
-
-[node name="Colossus" type="RichTextLabel" parent="HTA/Colossus16"]
-layout_mode = 0
-offset_right = 137.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "[p align=right]16. Malus:"
-
-[node name="Indicators" type="RichTextLabel" parent="HTA/Colossus16"]
-layout_mode = 0
-offset_left = 180.0
-offset_right = 317.0
-offset_bottom = 69.0
-bbcode_enabled = true
-text = "m         s           ms"
-
-[node name="Inputs" type="Control" parent="HTA/Colossus16"]
-anchors_preset = 0
-offset_left = -3.0
-offset_top = -5.0
-offset_right = 37.0
-offset_bottom = 35.0
-
-[node name="Minutes" type="TextEdit" parent="HTA/Colossus16/Inputs"]
-layout_mode = 0
-offset_left = 146.0
-offset_right = 178.0
-offset_bottom = 37.0
-placeholder_text = "X"
-
-[node name="Seconds" type="TextEdit" parent="HTA/Colossus16/Inputs"]
-layout_mode = 0
-offset_left = 197.0
-offset_right = 229.0
-offset_bottom = 37.0
-placeholder_text = "XX"
-
-[node name="Miliseconds" type="TextEdit" parent="HTA/Colossus16/Inputs"]
-layout_mode = 0
-offset_left = 248.0
-offset_right = 280.0
-offset_bottom = 37.0
-placeholder_text = "XX"
+[connection signal="pressed" from="Buttons/Return" to="." method="_on_return_pressed"]
+[connection signal="pressed" from="Buttons/SetTimes" to="." method="_on_set_times_pressed"]
+[connection signal="pressed" from="Buttons/ResetTimes" to="." method="_on_reset_times_pressed"]
+[connection signal="pressed" from="Buttons/DeleteTimes" to="." method="_on_delete_times_pressed"]
+[connection signal="text_changed" from="Col/NTA/Col1/LineEdit" to="." method="_on_time_text_changed" binds= [false, 1]]
+[connection signal="text_changed" from="Col/NTA/Col2/LineEdit" to="." method="_on_time_text_changed" binds= [false, 2]]
+[connection signal="text_changed" from="Col/NTA/Col3/LineEdit" to="." method="_on_time_text_changed" binds= [false, 3]]
+[connection signal="text_changed" from="Col/NTA/Col4/LineEdit" to="." method="_on_time_text_changed" binds= [false, 4]]
+[connection signal="text_changed" from="Col/NTA/Col5/LineEdit" to="." method="_on_time_text_changed" binds= [false, 5]]
+[connection signal="text_changed" from="Col/NTA/Col6/LineEdit" to="." method="_on_time_text_changed" binds= [false, 6]]
+[connection signal="text_changed" from="Col/NTA/Col7/LineEdit" to="." method="_on_time_text_changed" binds= [false, 7]]
+[connection signal="text_changed" from="Col/NTA/Col8/LineEdit" to="." method="_on_time_text_changed" binds= [false, 8]]
+[connection signal="text_changed" from="Col/NTA/Col9/LineEdit" to="." method="_on_time_text_changed" binds= [false, 9]]
+[connection signal="text_changed" from="Col/NTA/Col10/LineEdit" to="." method="_on_time_text_changed" binds= [false, 10]]
+[connection signal="text_changed" from="Col/NTA/Col11/LineEdit" to="." method="_on_time_text_changed" binds= [false, 11]]
+[connection signal="text_changed" from="Col/NTA/Col12/LineEdit" to="." method="_on_time_text_changed" binds= [false, 12]]
+[connection signal="text_changed" from="Col/NTA/Col13/LineEdit" to="." method="_on_time_text_changed" binds= [false, 13]]
+[connection signal="text_changed" from="Col/NTA/Col14/LineEdit" to="." method="_on_time_text_changed" binds= [false, 14]]
+[connection signal="text_changed" from="Col/NTA/Col15/LineEdit" to="." method="_on_time_text_changed" binds= [false, 15]]
+[connection signal="text_changed" from="Col/NTA/Col16/LineEdit" to="." method="_on_time_text_changed" binds= [false, 16]]
